@@ -13,9 +13,8 @@ body {
 .slider {
     $width: 500px;
     $height: 360px;
-    $count: 8;
 
-    width: $width + 100px;
+    min-width: $width + 100px;
     height: $height;
     margin: 20px;
 
@@ -34,7 +33,6 @@ body {
     }
     &__img {
         display: flex;
-        width: $width * $count;
 
         img {
             width: $width;
@@ -43,8 +41,27 @@ body {
     }
 
     &__dots {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
         width: 100%;
-        text-align: center;
+
+        span {
+            width: 13px;
+            height: 13px;
+            margin: 7px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: rgb(200, 200, 200);
+
+            &:hover {
+                background-color: rgb(150, 150, 150);
+            }
+        }
+        span.active {
+            background-color: rgb(150, 150, 150);
+            cursor: default;
+        }
     }
 
     #prev, #next {
@@ -57,10 +74,10 @@ body {
         border: none;
         border-radius: 50%;
         color: white;
-        background-color: rgb(211, 211, 211);
+        background-color: rgb(200, 200, 200);
 
         &:hover {
-            background-color: rgb(187, 187, 187);
+            background-color: rgb(150, 150, 150);
         }
     }
 }
