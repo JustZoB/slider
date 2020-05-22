@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="slider.scss">
+</head>
+<body>
+    <div class="slider">
+        <div class="slider__elements">
+            <button id="prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider__img__wrap">
+                <div class="slider__img">
+                    <img src="img/page_6.png" id="lastClone" alt="">
+                    <img src="img/page_1.png" alt="">
+                    <img src="img/page_2.png" alt="">
+                    <img src="img/page_3.png" alt="">
+                    <img src="img/page_4.png" alt="">
+                    <img src="img/page_5.png" alt="">
+                    <img src="img/page_6.png" alt="">
+                    <img src="img/page_1.png" id="firstClone" alt="">
+                </div>
+            </div>
+            <button id="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider__dots"></div>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>
